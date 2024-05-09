@@ -1,0 +1,139 @@
+/* Navbar container */
+.navbar {
+  background-color: black;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Container for navbar elements */
+.nav-Container {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 30px;
+  color: red;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/* Navigation links for larger screens */
+.nav-Links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-Links li {
+  padding: 0 15px;
+}
+
+.nav-Links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-Links a:hover {
+  color: red;
+}
+
+/* Navigation links for mobile */
+.nav-links-mobile {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.nav-links-mobile li {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.nav-links-mobile a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links-mobile a:hover {
+  color: red;
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+}
+
+.login,
+.register {
+  border: 2px solid green;
+  margin-right: 5px;
+  padding: 5px 2px;
+  border-radius: 40px;
+}
+
+/* Mobile menu icon for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-Links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: none; /* Hide by default */
+  }
+
+  /* Show the mobile menu when .nav-links-mobile is active */
+  .nav-links-mobile.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    width: 50%;
+    background-color: black;
+    padding: 10px 0;
+  }
+
+  .nav-links-mobile li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .nav-links-mobile a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links-mobile a:hover {
+    color: red;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+}
