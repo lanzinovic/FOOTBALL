@@ -1,0 +1,48 @@
+.about-section {
+  margin: 0 80px;
+  margin-bottom: 30px;
+}
+.about-header {
+  text-align: center;
+  margin-top: 30px;
+}
+.paragraphs {
+  margin-top: 40px;
+}
+.paragraphs p {
+  line-height: 2.3;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+/* For screens smaller than 768px (tablets and below) */
+@media (max-width: 768px) {
+  .about-section {
+    margin: 0 20px; /* Reduce margin on smaller screens */
+  }
+
+  .about-header {
+    font-size: 24px; /* Decrease font size of the header */
+    margin-top: 30px; /* Reduce top margin of the header */
+  }
+
+  .paragraphs p {
+    font-size: 14px; /* Decrease font size of paragraphs */
+    margin-bottom: 8px; /* Reduce bottom margin of paragraphs */
+  }
+}
+/* For screens smaller than 576px (phones) */
+@media (max-width: 576px) {
+  .about-section {
+    margin: 0 10px; /* Further reduce margin on smaller screens */
+  }
+
+  .about-header {
+    font-size: 20px; /* Further decrease font size of the header */
+    margin-top: 10px; /* Further reduce top margin of the header */
+  }
+
+  .paragraphs p {
+    font-size: 12px; /* Further decrease font size of paragraphs */
+    margin-bottom: 6px; /* Further reduce bottom margin of paragraphs */
+  }
+}

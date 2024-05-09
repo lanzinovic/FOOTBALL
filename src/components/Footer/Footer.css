@@ -1,0 +1,105 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  padding: 15px 10px; /* Reduce padding for smaller screens */
+  text-align: center;
+  font-size: 15px;
+}
+
+.partition {
+  flex: 1 1 100%; /* Full width for smaller screens */
+  margin: 0 10px;
+}
+
+.partition h3 {
+  margin-bottom: 10px;
+  color: gold;
+}
+.partition h1 {
+  text-shadow: 2px 2px 4px white;
+}
+
+.partition h4 {
+  margin-bottom: 2px;
+}
+
+.partition p {
+  margin: 5px 0;
+}
+
+.iconButton {
+  color: #fff;
+  margin-right: 8px;
+}
+
+.iconSpan {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.iconSpan:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.whatsapp,
+.email,
+.telegram,
+.sms,
+.phone {
+  margin-right: 5px; /* Adjust margin for smaller screens */
+}
+
+.helpfulLinks,
+.additionalLinks {
+  padding-left: 0; /* Remove left padding for list items */
+  list-style: none;
+}
+
+.helpfulLinks li,
+.additionalLinks li {
+  margin-bottom: 5px; /* Adjust margin for smaller screens */
+}
+.helpfulLinks a,
+.additionalLinks a {
+  text-decoration: none;
+  color: white;
+}
+.helpfulLinks a:hover,
+.additionalLinks a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.copyright span {
+  font-style: italic;
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px 60px; /* Restore padding for larger screens */
+  }
+
+  .partition {
+    flex: 1; /* Equal width for partitions on larger screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .iconSpan,
+  .helpfulLinks a,
+  .additionalLinks a {
+    font-size: 16px; /* Increase font size for larger screens */
+  }
+}

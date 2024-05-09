@@ -1,0 +1,34 @@
+.contact-section {
+  margin: 0 80px;
+  margin-bottom: 30px;
+}
+
+.contact-section h3 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-paragraphs {
+  margin-top: 30px;
+}
+
+.contact-paragraphs p {
+  line-height: 5;
+  text-align: center;
+  font-size: 14px;
+}
+.contact-paragraphs span {
+  color: rgb(223, 52, 80);
+}
+
+.contact-paragraphs a {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+  .contact-paragraphs p {
+    line-height: 3;
+  }
+}

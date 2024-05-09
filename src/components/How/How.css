@@ -1,0 +1,27 @@
+.how {
+  margin-top: 20px;
+}
+
+.how h2 {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.parahow {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.parahow p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+@media (max-width: 768px) {
+  /* Apply styles for screens smaller than 768px (tablets and mobile devices) */
+  .parahow {
+    max-width: 90%; /* Full width for smaller screens */
+    font-size: 14px;
+  }
+}

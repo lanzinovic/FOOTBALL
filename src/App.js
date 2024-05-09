@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Today from "./pages/Today/Today";
+import Accumulator from "./pages/Accumulator/Accumulator";
+import Vip from "./pages/Vip/Vip";
+import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
+import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
+import Refund from "./pages/Refund/Refund";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Today />} />
+        <Route path="/Accumulator" element={<Accumulator />} />
+        <Route path="/Vip" element={<Vip />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Refund" element={<Refund />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;

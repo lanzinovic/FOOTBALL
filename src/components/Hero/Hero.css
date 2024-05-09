@@ -1,0 +1,54 @@
+.prediction {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.head {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+table tr td:nth-child(2) {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  /* Apply styles for screens smaller than 768px (tablets and mobile devices) */
+  .prediction {
+    width: 100%; /* Full width for smaller screens */
+    padding: 0 15px; /* Add some padding to the sides for better spacing */
+  }
+
+  table {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  th,
+  td {
+    padding: 8px; /* Decrease padding for smaller screens */
+  }
+}
